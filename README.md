@@ -1,22 +1,134 @@
-# Precio-de-acciones-de-Mastercard-y-Visa
-Análisis y Predicción de Precios de Acciones de MasterCard y Visa
+# 📊Análisis y Predicción de Precios de Acciones de MasterCard y Visa (2008–2024)
 
-*Tecnologías utilizadas:* Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow/Keras y Statsmodels.
-Implementación de un análisis avanzado de datos bursátiles y predicción de precios de acciones basados en series temporales utilizando múltiples enfoques de modelado y visualización.
-**Exploración y análisis de datos (EDA):**
-Procesamiento de datos históricos de MasterCard y Visa (2008-2024), incluyendo limpieza, análisis estadístico y visualización de tendencias.
-Análisis de estacionariedad mediante pruebas como Dickey-Fuller aumentado (ADF).
-Generación de mapas de calor de correlación y análisis comparativos.
-**Desarrollo de modelos predictivos:**
-*Modelos estadísticos:* Implementación de ARIMA para la predicción de precios univariados con validación temporal.
-*Redes neuronales:* Creación y entrenamiento de modelos LSTM para predicción secuencial, normalizando datos y optimizando hiperparámetros.
-*Regresión:* Aplicación de Random Forest y Regresión Lineal para identificar relaciones entre variables bursátiles.
-**Evaluación y visualización:**
-Evaluación de modelos con métricas como MSE, RMSE y R².
-Comparación de predicciones frente a valores reales mediante gráficos interactivos y visualización de tendencias con medias móviles y candelabros.
-*Técnicas:* Modelado ARIMA, redes neuronales recurrentes (LSTM), regresión multivariable y análisis de volatilidad.
+Este proyecto realiza un análisis financiero integral y la predicción de precios de acciones de MasterCard (MA) y Visa (V) utilizando datos históricos diarios desde 2008 hasta 2024.
 
-***Resultados destacados:***
-Generación de predicciones precisas de precios para períodos futuros.
-Identificación de patrones históricos y tendencias para mejorar la toma de decisiones financieras.
-Creación de un pipeline replicable para análisis de series temporales y predicción financiera.
+Se combinan técnicas de Análisis Exploratorio de Datos (EDA), estadística, Machine Learning, Deep Learning (LSTM) y modelos econométricos (ARIMA) para estudiar el comportamiento del precio, la volatilidad y la dinámica temporal de ambas acciones.
+
+🎯 Objetivos del proyecto
+- Analizar la evolución histórica de los precios de MasterCard y Visa.
+- Comparar el desempeño y la correlación entre ambas acciones.
+- Explorar distribuciones, volatilidad y rendimientos.
+- Aplicar técnicas de limpieza, normalización y tratamiento de outliers.
+- Entrenar modelos de Machine Learning para predicción de precios.
+- Implementar Deep Learning (LSTM) para series temporales.
+- Modelar la dinámica temporal mediante ARIMA.
+- Realizar pronósticos futuros y visualizarlos de forma interactiva.
+
+📁 Descripción del dataset
+El dataset contiene precios históricos diarios de acciones:
+- Variables incluidas
+- Date: fecha de negociación
+- Open, High, Low, Close, Adj Close para MasterCard y Visa
+- Volume: volumen negociado
+- Aspectos destacados
+   - Más de 15 años de datos históricos
+
+Ideal para:
+- Series temporales financieras
+- Análisis comparativo
+- Modelado predictivo
+- Fines educativos y de investigación 
+
+
+📊 Análisis Exploratorio de Datos (EDA)
+- Evolución temporal de precios de cierre.
+- Histogramas y distribuciones KDE.
+- Análisis de correlación y mapas de calor.
+- Gráficos de regresión entre precios de cierre.
+- Distribución comparativa de volúmenes.
+- Diagramas de caja para detección de outliers.
+- Medias móviles (30, 50 y 200 días).
+- Volatilidad móvil (rolling standard deviation).
+- Rendimientos diarios y acumulados.
+
+🧪 Análisis estadístico
+- Prueba de normalidad (Shapiro–Wilk).
+- Transformación de potencia para normalización.
+- Prueba ADF (Dickey–Fuller aumentada) para estacionariedad.
+- Descomposición estacional:
+  -- Tendencia
+  -- Estacionalidad
+  -- Residuo
+
+🤖 Modelos de Machine Learning
+🔹 Random Forest Regressor
+
+Predicción del precio de cierre para:
+
+MasterCard
+
+Visa
+
+Features:
+- Precios Open, High, Low
+- Volúmenes de ambas acciones
+
+Métricas:
+- MSE
+- R²
+
+Comparación visual de valores reales vs. predichos.
+
+🔹 Regresión Lineal
+- Modelo base para evaluar relaciones lineales.
+- Análisis de error y dispersión real vs. predicho.
+
+🧠 Deep Learning – LSTM
+- Normalización con MinMaxScaler.
+- Ventanas temporales de 60 días.
+- Arquitectura:
+  -- Capas LSTM apiladas
+  -- Capas Dense
+
+Entrenamiento independiente para:
+- MasterCard
+- Visa
+- Evaluación con RMSE.
+
+Visualización de:
+- Datos de entrenamiento
+- Datos de validación
+- Predicciones del modelo.
+
+⏱️ Modelado econométrico – ARIMA
+- Modelos ARIMA(5,1,0) para MasterCard y Visa.
+- Predicción fuera de muestra.
+- Pronósticos extendidos a 3 años (2025–2027).
+- Visualización de precios históricos y futuros.
+- Gráficos de velas interactivos con Plotly.
+
+🛠️ Tecnologías utilizadas
+- Python
+- pandas / numpy
+- Matplotlib / Seaborn
+- Plotly
+- scikit-learn
+- TensorFlow / Keras
+- statsmodels
+
+📂 Estructura del proyecto
+├── 1.py
+├── MVR.csv
+└── README.md
+
+▶️ Cómo ejecutar el proyecto
+pip install pandas numpy matplotlib seaborn plotly scikit-learn tensorflow statsmodels
+python 1.py
+
+📌 Resultados clave
+- Alta correlación entre los precios de MasterCard y Visa.
+- Tendencias de largo plazo claramente identificables.
+- Random Forest mejora modelos lineales básicos.
+- LSTM captura dependencias temporales complejas.
+- ARIMA permite pronósticos interpretable de corto y mediano plazo.
+- El enfoque híbrido combina interpretabilidad + performance.
+
+⚠️ Disclaimer
+
+Este proyecto tiene fines educativos y analíticos.
+No constituye asesoramiento financiero ni recomendaciones de inversión.
+
+👤 Autor
+
+Flavia Hepp
+Data Science · Machine Learning · Deep Learning · Finanzas
