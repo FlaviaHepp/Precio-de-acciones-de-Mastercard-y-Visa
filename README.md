@@ -55,9 +55,9 @@ Ideal para:
 
 Predicción del precio de cierre para:
 
-**MasterCard
+**MasterCard**
 
-**Visa
+**Visa**
 
 Features:
 - Precios Open, High, Low
@@ -104,7 +104,7 @@ Visualización de:
 - Plotly
 - scikit-learn
 - TensorFlow / Keras
-- statsmodels
+- `statsmodels`
 
 ## 📂Estructura del proyecto
 
