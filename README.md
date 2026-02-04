@@ -55,9 +55,9 @@ Ideal para:
 
 Predicción del precio de cierre para:
 
-**MasterCard**
+-- MasterCard
 
-**Visa**
+-- Visa
 
 Features:
 - Precios Open, High, Low
