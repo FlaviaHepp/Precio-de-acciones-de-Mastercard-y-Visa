@@ -4,7 +4,7 @@ Este proyecto realiza un análisis financiero integral y la predicción de preci
 
 Se combinan técnicas de Análisis Exploratorio de Datos (EDA), estadística, Machine Learning, Deep Learning (LSTM) y modelos econométricos (ARIMA) para estudiar el comportamiento del precio, la volatilidad y la dinámica temporal de ambas acciones.
 
-🎯 Objetivos del proyecto
+## 🎯Objetivos del proyecto
 - Analizar la evolución histórica de los precios de MasterCard y Visa.
 - Comparar el desempeño y la correlación entre ambas acciones.
 - Explorar distribuciones, volatilidad y rendimientos.
@@ -14,7 +14,7 @@ Se combinan técnicas de Análisis Exploratorio de Datos (EDA), estadística, Ma
 - Modelar la dinámica temporal mediante ARIMA.
 - Realizar pronósticos futuros y visualizarlos de forma interactiva.
 
-📁 Descripción del dataset
+## 📁Descripción del dataset
 El dataset contiene precios históricos diarios de acciones:
 - Variables incluidas
 - Date: fecha de negociación
@@ -30,7 +30,7 @@ Ideal para:
 - Fines educativos y de investigación 
 
 
-📊 Análisis Exploratorio de Datos (EDA)
+## 📊Análisis Exploratorio de Datos (EDA)
 - Evolución temporal de precios de cierre.
 - Histogramas y distribuciones KDE.
 - Análisis de correlación y mapas de calor.
@@ -41,7 +41,7 @@ Ideal para:
 - Volatilidad móvil (rolling standard deviation).
 - Rendimientos diarios y acumulados.
 
-🧪 Análisis estadístico
+## 🧪Análisis estadístico
 - Prueba de normalidad (Shapiro–Wilk).
 - Transformación de potencia para normalización.
 - Prueba ADF (Dickey–Fuller aumentada) para estacionariedad.
@@ -50,14 +50,14 @@ Ideal para:
   -- Estacionalidad
   -- Residuo
 
-🤖 Modelos de Machine Learning
+## 🤖Modelos de Machine Learning
 🔹 Random Forest Regressor
 
 Predicción del precio de cierre para:
 
-MasterCard
+**MasterCard
 
-Visa
+**Visa
 
 Features:
 - Precios Open, High, Low
@@ -73,7 +73,7 @@ Comparación visual de valores reales vs. predichos.
 - Modelo base para evaluar relaciones lineales.
 - Análisis de error y dispersión real vs. predicho.
 
-🧠 Deep Learning – LSTM
+## 🧠Deep Learning – LSTM
 - Normalización con MinMaxScaler.
 - Ventanas temporales de 60 días.
 - Arquitectura:
@@ -90,32 +90,30 @@ Visualización de:
 - Datos de validación
 - Predicciones del modelo.
 
-⏱️ Modelado econométrico – ARIMA
+## ⏱️Modelado econométrico – ARIMA
 - Modelos ARIMA(5,1,0) para MasterCard y Visa.
 - Predicción fuera de muestra.
 - Pronósticos extendidos a 3 años (2025–2027).
 - Visualización de precios históricos y futuros.
 - Gráficos de velas interactivos con Plotly.
 
-🛠️ Tecnologías utilizadas
+## 🛠️Tecnologías utilizadas
 - Python
 - pandas / numpy
-- Matplotlib / Seaborn
+- Matplotlib / `Seaborn`
 - Plotly
 - scikit-learn
 - TensorFlow / Keras
 - statsmodels
 
-📂 Estructura del proyecto
+## 📂Estructura del proyecto
+
 ├── 1.py
 ├── MVR.csv
 └── README.md
 
-▶️ Cómo ejecutar el proyecto
-pip install pandas numpy matplotlib seaborn plotly scikit-learn tensorflow statsmodels
-python 1.py
 
-📌 Resultados clave
+## 📌Resultados clave
 - Alta correlación entre los precios de MasterCard y Visa.
 - Tendencias de largo plazo claramente identificables.
 - Random Forest mejora modelos lineales básicos.
@@ -123,12 +121,12 @@ python 1.py
 - ARIMA permite pronósticos interpretable de corto y mediano plazo.
 - El enfoque híbrido combina interpretabilidad + performance.
 
-⚠️ Disclaimer
+# ⚠️Disclaimer
 
 Este proyecto tiene fines educativos y analíticos.
 No constituye asesoramiento financiero ni recomendaciones de inversión.
 
-👤 Autor
+## 👤Autor
 
-Flavia Hepp
-Data Science · Machine Learning · Deep Learning · Finanzas
+**Flavia Hepp**
+Data Science en formación · Machine Learning · Deep Learning · Finanzas
